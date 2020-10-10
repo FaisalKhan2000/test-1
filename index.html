@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RedStore | Ecommerce Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+   
+   <div class="header">
+       <div class="container">
+          <div class="navbar">
+              <div class="logo">
+                  <a href="index.html"><img src="images/logo-2.png" width="125px"></a>
+              </div>
+              <nav>
+               <ul id="MenuItems">
+                   <li><a href="men.html">Men</a></li>
+                   <li><a href="women.html">Women</a></li>
+                   <li><a href="kids.html">Kids</a></li>
+                   <li><a href="brands.html">Brands</a></li>
+                   <li><a href="account.html">Account</a></li>
+               </ul>
+              </nav>
+              <a href="cart.html"><img src="images/cart-2.png" width="30px" height="30px"></a>
+              <img src="images/menu-2.png" onclick="menutoggle()" class="menu-icon">
+          </div>  
+       </div>
+       </div>
+<!-- ----------Image-slider--------------- -->
+<div class="slider-body">
+     <!--image slider start-->
+ <div class="slider">
+    <div class="slides">
+      <!--radio buttons start-->
+      <input type="radio" name="radio-btn" id="radio1">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+     
+      <!--radio buttons end-->
+      <!--slide images start-->
+      <div class="slide first">
+        <img src="./slider-images/img-1.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./slider-images/img-2.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./slider-images/img-3.png" alt="">
+      </div>
+      <div class="slide">
+        <img src="./slider-images/img-4.png" alt="">
+      </div>
+     
+      <!--slide images end-->
+      <!--automatic navigation start-->
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <!--automatic navigation end-->
+    </div>
+    <!--manual navigation start-->
+    <div class="navigation-manual">
+      <label for="radio1" class="manual-btn"></label>
+      <label for="radio2" class="manual-btn"></label>
+      <label for="radio3" class="manual-btn"></label>
+      <label for="radio4" class="manual-btn"></label>
+    </div>
+    <!--manual navigation end-->
+  </div>
+  <!--image slider end-->
+
+  <script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+  </script>
+</div>
+
+    
+ 
+
+<!------------------ featured categories --------------->
+     <div class="categories">
+        <h2 class="title">Explore Top Brands</h2>
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                <a href="nike.html"><img src="./brand/br1.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="levis.html"><img src="./brand/br2.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="roadster.html"><img src="./brand/br3.png"></a>
+               </div> 
+              
+               <div class="col-3">
+                <a href="H&M.html"><img src="./brand/br5.png"></a>
+               </div> 
+               
+                
+               <div class="col-3">
+                <a href="jack&jones.html"><img src="./brand/br8.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="HRX.html"><img src="./brand/br9.png"></a>
+               </div> 
+           </div>
+       </div>
+     </div>
+
+
+     <!-- -----Trending in western wear----- -->
+     <div class="categories">
+        <h2 class="title">Trending In western Wear</h2>
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                <a href="#"><img src="./western wear images/wr1.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./western wear images/wr2.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./western wear images/wr3.png"></a>
+               </div> 
+               </div> 
+           </div>
+       </div>
+     </div>
+
+     <!-- ----trending in indian wear---- -->
+     <div class="categories">
+        <h2 class="title">Trending In Indian Wear</h2>
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                <a href="#"><img src="./indian wear images/ir1.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./indian wear images/ir2.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./indian wear images/ir3.png"></a>
+               </div> 
+               </div> 
+           </div>
+       </div>
+     </div>
+
+      <!-- ----trending in sports wear---- -->
+      <div class="categories">
+        <h2 class="title">Trending In Sports Wear</h2>
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                <a href="#"><img src="./sports wear images/sp1.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./sports wear images/sp2.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./sports wear images/sp3.png"></a>
+               </div> 
+                </div> 
+           </div>
+       </div>
+     </div>
+
+      <!-- ----trending in foot wear---- -->
+      <div class="categories">
+        <h2 class="title">Trending In Foot Wear</h2>
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                <a href="#"><img src="./foot wear images/fr1.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./foot wear images/fr2.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./foot wear images/fr3.png"></a>
+               </div> 
+           </div>
+       </div>
+     </div>
+
+     <!-- ----trending in Accessories---- -->
+     <div class="categories">
+        <h2 class="title">Trending In Accessories</h2>
+         <div class="small-container">
+           <div class="row">
+               <div class="col-3">
+                <a href="#"><img src="./accessories images/i1.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./accessories images/i2.png"></a>
+               </div> 
+               <div class="col-3">
+                <a href="#"><img src="./accessories images/i3.png"></a>
+               </div> 
+           </div>
+       </div>
+     </div>
+       
+
+<!----------offer--------------->
+  
+   <div class="offer">
+       <div class="small-container">
+           <div class="row">
+           <div class="col-2">
+               <img src="images/airpods-2.png" class="offer-img">
+           </div>
+           <div class="col-2">
+               <p>Exclusively Available on our store </p>
+               <h1> Boat Airdopes 441</h1>
+               <small>boAt Airdopes 441 TWS Ear-Buds with IWP Technology, Immersive Audio, Up to 30H Total Playback, IPX7 Water Resistance, Super Touch Controls, Secure Sports Fit & Type-C Port(Bumblebee Yellow).</small>
+               <br>
+               <a href="#" class="btn">Buy Now &#8594;</a>
+           </div>
+       </div>
+       </div>
+       
+   </div>
+   
+<!----------testimonial--------------->   
+  
+   <div class="testimonial">
+       <div class="small-container">
+       <div class="row">
+           <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-1.png">
+                       <h3>Sean Parker</h3>
+           </div>
+            <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-2.png">
+                       <h3>Mike Smith</h3>
+           </div>
+            <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.</p>
+                      <div class="rating">
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star"></i>
+                           <i class="fa fa-star-o"></i>
+                       </div>
+                       <img src="images/user-3.png">
+                       <h3>Mabel Joe</h3>
+           </div>
+       </div>
+       </div>
+   </div>
+<!----------Brands--------------->     
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-5">
+                    <img src="images/logo-godrej.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-oppo.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-coca-cola.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-paypal.png">
+                </div>
+                <div class="col-5">
+                    <img src="images/logo-philips.png">
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------Footer---------------> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col1">
+               <h3>Download Our App</h3>
+                <p>Download App for Android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/play-store.png">
+                    <img src="images/app-store.png">
+                </div>
+            </div>
+            <div class="footer-col2">
+               <img src="images/logo-white.png">
+                <p>Our Purpose Is To Sustainably Make the Pleasure and Benefits of Sports Accessible to the Many.</p>
+            </div>
+            <div class="footer-col3">
+               <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col4">
+               <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter<li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - </p>
+    </div>
+    
+</div>
+
+
+
+<!-------------js for toggle menu-------------->
+
+<script>
+    
+    var MenuItems = document.getElementById("MenuItems");
+    
+    MenuItems.style.maxHeight = "0px";
+    
+    function menutoggle()
+    {
+        if(MenuItems.style.maxHeight == "0px")
+            {
+                MenuItems.style.maxHeight = "200px";
+            }else
+            {
+                MenuItems.style.maxHeight = "0px"
+            } 
+    }
+    
+</script>
+
+
+
+</body>
+</html>
+
